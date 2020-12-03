@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">FirstApp</string>
+    <string name="signin_action">Sign in</string>
+    <string name="signin_password">Password</string>
+    <string name="signin_username">Username</string>
+    <string name="signin_page">Sign in</string>
+    <string name="signin_link_signup">Sign up</string>
+    <string name="signup_page">Sign up</string>
+    <string name="signup_link_signin">Sign in</string>
+    <string name="signup_action">Sign up</string>
+    <string name="signup_name">Name</string>
 </resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/signup_txtView_pageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="64dp"
+            android:clickable="false"
+            android:text="@string/signup_page"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#2196F3" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_txtInput_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:hint="@string/signin_username"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_txtInput_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:hint="@string/signup_name"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:background="#00FFFFFF"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_txtInput_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:hint="@string/signin_password"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/signup_btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup_action"  />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signup_btn_link_signin"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup_link_signin"
+            android:textColor="@color/blue_500"
+            app:backgroundTint="@android:color/transparent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
